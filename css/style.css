@@ -15,6 +15,34 @@ h2 {
     color: #444444;
 }
 
+.navbar {
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #444444;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Style only the links inside the navigation */
+nav a {
+    color: #ffffff;
+}
+
 img {
     width: 200px;
 }
@@ -23,6 +51,7 @@ img {
     background-color: #ffffff;
     padding: 20px;
     border: 3px solid #444444;
+    border-radius: 10px;
 }
 
 section {
