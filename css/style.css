@@ -7,18 +7,21 @@ body {
     padding: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #444444;
 }
 
-h2 {
-    color: #444444;
+.intro {
+    margin-bottom: 30px;
 }
 
 .navbar {
     background-color: #222222;
     color: #ffffff;
     display: flex;
+    /* Let the links move below the title when space is tight */
+    flex-wrap: wrap;
+    gap: 15px;
     align-items: center;
     justify-content: space-between;
     border: 3px solid #444444;
@@ -35,6 +38,7 @@ h2 {
 
 .navbar-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -45,6 +49,8 @@ nav a {
 
 img {
     width: 200px;
+    /* Let the photo shrink when its section is narrow */
+    max-width: 100%;
 }
 
 .about {
@@ -60,6 +66,10 @@ section {
 
 form div {
     margin-bottom: 15px;
+}
+
+label {
+    font-weight: 700;
 }
 
 /* Use the same font for the fields and button */
@@ -90,7 +100,7 @@ button {
 footer {
     background-color: #222222;
     padding: 20px;
-    border: 1px solid #444444;
+    border: 3px solid #444444;
     border-radius: 10px;
 }
 
